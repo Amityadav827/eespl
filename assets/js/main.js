@@ -364,3 +364,43 @@
     event.preventDefault();
   });
 })();
+
+/* Back to Top */
+(() => {
+  "use strict";
+
+  const scrollTopButton = document.querySelector(".eespl-scroll-top");
+  const mainContent = document.querySelector("#main-content");
+
+  if (!scrollTopButton) {
+    return;
+  }
+
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let updatePending = false;
+
+  const updateVisibility = () => {
+    const isVisible = window.scrollY > 400;
+    scrollTopButton.classList.toggle("is-visible", isVisible);
+    scrollTopButton.setAttribute("aria-hidden", String(!isVisible));
+    scrollTopButton.tabIndex = isVisible ? 0 : -1;
+    updatePending = false;
+  };
+
+  window.addEventListener("scroll", () => {
+    if (!updatePending) {
+      updatePending = true;
+      window.requestAnimationFrame(updateVisibility);
+    }
+  }, { passive: true });
+
+  scrollTopButton.addEventListener("click", () => {
+    mainContent?.focus({ preventScroll: true });
+    window.scrollTo({
+      top: 0,
+      behavior: reducedMotion.matches ? "auto" : "smooth"
+    });
+  });
+
+  updateVisibility();
+})();
