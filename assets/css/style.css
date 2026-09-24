@@ -3304,3 +3304,238 @@ body.eespl-modal-open {
     transition-property: opacity;
   }
 }
+
+/* ==========================================================================
+   About Us Page — Step 1: Hero Section
+   ========================================================================== */
+
+.eespl-about-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 450px;
+  overflow: hidden;
+  color: var(--eespl-white);
+  background-color: var(--eespl-navy);
+  display: flex;
+  align-items: center;
+}
+
+.eespl-about-hero__background,
+.eespl-about-hero__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.eespl-about-hero__background {
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.eespl-about-hero__overlay {
+  z-index: -2;
+  /* Subtle localized darkening on left while keeping treatment plant clearly visible on right */
+  background: linear-gradient(
+    90deg,
+    rgba(23, 50, 74, 0.42) 0%,
+    rgba(23, 50, 74, 0.2) 48%,
+    rgba(23, 50, 74, 0.04) 75%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.eespl-about-hero__inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-top: 56px;
+  padding-bottom: 78px;
+}
+
+.eespl-about-hero__content {
+  max-width: 650px;
+}
+
+/* Breadcrumb */
+.eespl-breadcrumb__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.eespl-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.eespl-breadcrumb__link {
+  color: var(--eespl-green);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 150ms ease, text-decoration 150ms ease;
+}
+
+.eespl-breadcrumb__link:hover,
+.eespl-breadcrumb__link:focus-visible {
+  color: #9cd474;
+  text-decoration: underline;
+}
+
+.eespl-breadcrumb__separator {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.68rem;
+}
+
+.eespl-breadcrumb__current {
+  color: var(--eespl-white);
+  font-weight: 500;
+}
+
+/* Main H1 */
+.eespl-about-hero__title {
+  margin: 0;
+  color: var(--eespl-white);
+  font-family: "Lora", Georgia, serif;
+  font-size: clamp(2.85rem, 4.2vw, 3.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.eespl-about-hero__accent {
+  color: var(--eespl-green);
+  font-style: normal;
+}
+
+/* Supporting Copy */
+.eespl-about-hero__description {
+  max-width: 620px;
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.62;
+}
+
+/* Bottom Water Wave */
+.eespl-about-hero__waves {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  z-index: 3;
+  height: 38px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .eespl-about-hero {
+    min-height: 420px;
+  }
+
+  .eespl-about-hero__inner {
+    padding-top: 48px;
+    padding-bottom: 70px;
+  }
+
+  .eespl-about-hero__title {
+    font-size: clamp(2.5rem, 5vw, 3.2rem);
+  }
+
+  .eespl-about-hero__description {
+    max-width: 560px;
+    font-size: 1rem;
+  }
+
+  .eespl-about-hero__waves {
+    height: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .eespl-about-hero {
+    min-height: 400px;
+  }
+
+  .eespl-about-hero__background {
+    object-position: 70% center;
+  }
+
+  .eespl-about-hero__overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(23, 50, 74, 0.65) 0%,
+      rgba(23, 50, 74, 0.45) 60%,
+      rgba(23, 50, 74, 0.2) 100%
+    );
+  }
+
+  .eespl-about-hero__inner {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+
+  .eespl-about-hero__title {
+    font-size: clamp(2.2rem, 6.2vw, 2.75rem);
+  }
+
+  .eespl-about-hero__description {
+    font-size: 0.96rem;
+    line-height: 1.55;
+  }
+
+  .eespl-about-hero__waves {
+    height: 32px;
+  }
+}
+
+@media (max-width: 520px) {
+  .eespl-about-hero {
+    min-height: 380px;
+  }
+
+  .eespl-about-hero__background {
+    object-position: 74% center;
+  }
+
+  .eespl-about-hero__overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(23, 50, 74, 0.76) 0%,
+      rgba(23, 50, 74, 0.55) 75%,
+      rgba(23, 50, 74, 0.35) 100%
+    );
+  }
+
+  .eespl-about-hero__inner {
+    padding-top: 32px;
+    padding-bottom: 56px;
+  }
+
+  .eespl-about-hero__title {
+    font-size: clamp(1.95rem, 8.4vw, 2.35rem);
+  }
+
+  .eespl-about-hero__description {
+    margin-top: 14px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .eespl-about-hero__waves {
+    height: 28px;
+  }
+}
