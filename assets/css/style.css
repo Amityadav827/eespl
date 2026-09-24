@@ -3549,3 +3549,381 @@ body.eespl-modal-open {
     height: 28px;
   }
 }
+
+/* ==========================================================================
+   About Us Page - Step 2: Director's Message Section
+   ========================================================================== */
+
+.eespl-about-director {
+  position: relative;
+  background-color: var(--eespl-white);
+  padding-block: 92px;
+}
+
+.eespl-about-director__grid {
+  display: grid;
+  grid-template-columns: 270px 1fr 350px;
+  gap: 46px;
+  align-items: start;
+}
+
+/* --- Left Column: Navigation Card --- */
+.eespl-about-nav {
+  position: sticky;
+  top: 110px;
+  background: #f7fafc;
+  border: 1px solid rgba(62, 95, 114, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(62, 95, 114, 0.04);
+}
+
+.eespl-about-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.eespl-about-nav__item {
+  border-bottom: 1px solid rgba(62, 95, 114, 0.08);
+}
+
+.eespl-about-nav__item:last-child {
+  border-bottom: none;
+}
+
+.eespl-about-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 64px;
+  padding: 16px 20px;
+  color: var(--eespl-navy);
+  text-decoration: none;
+  font-size: 0.94rem;
+  font-weight: 600;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.eespl-about-nav__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  color: var(--eespl-green);
+  font-size: 1rem;
+  flex-shrink: 0;
+  transition: color 180ms ease;
+}
+
+.eespl-about-nav__label {
+  flex: 1;
+  line-height: 1.35;
+}
+
+.eespl-about-nav__arrow {
+  color: var(--eespl-navy);
+  opacity: 0.55;
+  font-size: 0.75rem;
+  transition: transform 180ms ease, opacity 180ms ease, color 180ms ease;
+}
+
+.eespl-about-nav__link:hover:not(.is-active) {
+  background-color: rgba(127, 176, 94, 0.08);
+  color: var(--eespl-navy);
+}
+
+.eespl-about-nav__link:hover:not(.is-active) .eespl-about-nav__arrow {
+  transform: translateX(3px);
+  opacity: 0.9;
+}
+
+.eespl-about-nav__link.is-active {
+  background-color: var(--eespl-green);
+  color: var(--eespl-white);
+}
+
+.eespl-about-nav__link.is-active .eespl-about-nav__icon,
+.eespl-about-nav__link.is-active .eespl-about-nav__arrow {
+  color: var(--eespl-white);
+  opacity: 1;
+}
+
+/* --- Center Column: Director Message --- */
+.eespl-about-director__eyebrow {
+  margin: 0;
+  color: var(--eespl-green);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.eespl-about-director__heading {
+  margin: 12px 0 24px;
+  color: var(--eespl-navy);
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(2.2rem, 3.2vw, 2.85rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.16;
+}
+
+.eespl-about-director__body p {
+  margin: 0 0 16px;
+  color: #435b6d;
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+.eespl-about-director__body p strong {
+  color: var(--eespl-navy);
+  font-weight: 600;
+}
+
+/* Director Identity Block */
+.eespl-director-sign {
+  margin-top: 28px;
+  padding-left: 18px;
+  border-left: 3px solid var(--eespl-green);
+}
+
+.eespl-director-sign__name {
+  display: block;
+  color: var(--eespl-navy);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.eespl-director-sign__title {
+  display: block;
+  margin-top: 3px;
+  color: #6a8292;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.eespl-director-sign__bio {
+  margin: 8px 0 0;
+  color: #556c7d;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+/* --- Right Column: Photo & Quote Card --- */
+.eespl-about-director__visual {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.eespl-director-photo-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(62, 95, 114, 0.12);
+  border: 1px solid rgba(62, 95, 114, 0.08);
+  background-color: #f7fafc;
+}
+
+.eespl-director-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 426 / 427;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.eespl-director-quote-card {
+  background: rgba(62, 95, 114, 0.05);
+  border: 1px solid rgba(62, 95, 114, 0.1);
+  border-radius: 16px;
+  padding: 26px 28px;
+}
+
+.eespl-director-quote-card__icon {
+  color: var(--eespl-green);
+  font-size: 1.75rem;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.eespl-director-quote-card__text {
+  margin: 0;
+  color: var(--eespl-navy);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.62;
+}
+
+.eespl-director-quote-card__divider {
+  width: 36px;
+  height: 3px;
+  background-color: var(--eespl-green);
+  border-radius: 2px;
+  margin: 16px 0 12px;
+}
+
+.eespl-director-quote-card__name {
+  display: block;
+  color: var(--eespl-navy);
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.eespl-director-quote-card__role {
+  display: block;
+  margin-top: 2px;
+  color: #6a8292;
+  font-size: 0.84rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1150px) {
+  .eespl-about-director__grid {
+    grid-template-columns: 240px 1fr 310px;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .eespl-about-director {
+    padding-block: 76px;
+  }
+
+  .eespl-about-director__grid {
+    grid-template-columns: 220px 1fr 280px;
+    gap: 28px;
+  }
+
+  .eespl-about-nav__link {
+    padding: 14px 16px;
+    min-height: 58px;
+    font-size: 0.88rem;
+  }
+
+  .eespl-director-quote-card {
+    padding: 20px 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .eespl-about-director {
+    padding-block: 60px;
+  }
+
+  .eespl-about-director__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* Horizontal scrollable tabs navigation on tablet/mobile */
+  .eespl-about-nav {
+    position: static;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding-bottom: 6px;
+  }
+
+  .eespl-about-nav__list {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+  }
+
+  .eespl-about-nav__item {
+    border-bottom: none;
+  }
+
+  .eespl-about-nav__link {
+    min-height: 44px;
+    padding: 10px 18px;
+    background: #f4f8fa;
+    border: 1px solid rgba(62, 95, 114, 0.12);
+    border-radius: 30px;
+    white-space: nowrap;
+    font-size: 0.88rem;
+  }
+
+  .eespl-about-nav__arrow {
+    display: none;
+  }
+
+  .eespl-about-nav__link.is-active {
+    background-color: var(--eespl-green);
+    border-color: var(--eespl-green);
+  }
+
+  /* Layout ordering for tablet & mobile */
+  .eespl-about-director__content {
+    display: contents;
+  }
+
+  .eespl-about-director__visual {
+    display: contents;
+  }
+
+  .eespl-about-nav {
+    order: 1;
+  }
+
+  .eespl-about-director__eyebrow {
+    order: 2;
+  }
+
+  .eespl-about-director__heading {
+    order: 3;
+    margin: 8px 0 20px;
+  }
+
+  .eespl-director-photo-card {
+    order: 4;
+    max-width: 360px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .eespl-about-director__body {
+    order: 5;
+  }
+
+  .eespl-director-sign {
+    order: 6;
+  }
+
+  .eespl-director-quote-card {
+    order: 7;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eespl-about-director {
+    padding-block: 46px;
+  }
+
+  .eespl-about-director__heading {
+    font-size: clamp(1.85rem, 7.5vw, 2.2rem);
+  }
+
+  .eespl-about-director__body p {
+    font-size: 0.94rem;
+    line-height: 1.68;
+  }
+
+  .eespl-director-photo-card {
+    max-width: 100%;
+  }
+
+  .eespl-director-quote-card {
+    padding: 20px 18px;
+  }
+}
