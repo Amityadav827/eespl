@@ -4452,3 +4452,356 @@ body.eespl-modal-open {
     transform: none !important;
   }
 }
+
+/* ==========================================================================
+   About Us Page - Step 5: Our Growth Section
+   ========================================================================== */
+
+.eespl-about-growth {
+  position: relative;
+  background-color: #F8FBFD;
+  padding-block: 92px;
+  border-top: 1px solid rgba(62, 95, 114, 0.08);
+}
+
+/* Top Growth Block: 2 Columns (Chart Left, Content Right) */
+.eespl-growth-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  gap: 48px;
+  align-items: center;
+}
+
+/* Historical Turnover Chart Card */
+.eespl-growth-chart-card {
+  margin: 0;
+  background: var(--eespl-white);
+  border: 1px solid rgba(62, 95, 114, 0.12);
+  border-radius: 18px;
+  padding: 26px 28px 20px;
+  box-shadow: 0 10px 30px rgba(62, 95, 114, 0.06);
+  transition: transform 280ms ease, box-shadow 280ms ease;
+}
+
+.eespl-growth-chart-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(62, 95, 114, 0.1);
+}
+
+.eespl-growth-chart-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.eespl-growth-chart-card__badge {
+  display: inline-block;
+  color: var(--eespl-green);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.eespl-growth-chart-card__title {
+  margin: 3px 0 0;
+  color: var(--eespl-navy);
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.eespl-growth-chart-card__legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #6a8292;
+  font-weight: 500;
+  background: rgba(127, 176, 94, 0.08);
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.eespl-growth-chart-card__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--eespl-green);
+}
+
+.eespl-growth-chart-wrapper {
+  width: 100%;
+}
+
+.eespl-growth-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.eespl-growth-chart-card__caption {
+  margin-top: 14px;
+  text-align: center;
+  color: #6a8292;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Right Content */
+.eespl-growth-top__eyebrow {
+  margin: 0 0 10px;
+  color: var(--eespl-green);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eespl-growth-top__heading {
+  margin: 0 0 22px;
+  color: var(--eespl-navy);
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(2.2rem, 3.2vw, 2.85rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.16;
+}
+
+.eespl-growth-top__body p {
+  margin: 0 0 16px;
+  color: #435b6d;
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+/* Manufacturing & Team Card */
+.eespl-growth-team-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 56px;
+  padding: 30px 36px;
+  background: var(--eespl-white);
+  border: 1px solid rgba(62, 95, 114, 0.12);
+  border-left: 4px solid var(--eespl-green);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(62, 95, 114, 0.05);
+}
+
+.eespl-growth-team-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(127, 176, 94, 0.12);
+  color: var(--eespl-green);
+  font-size: 1.45rem;
+  flex-shrink: 0;
+}
+
+.eespl-growth-team-card__title {
+  margin: 0 0 8px;
+  color: var(--eespl-navy);
+  font-size: 1.18rem;
+  font-weight: 700;
+}
+
+.eespl-growth-team-card__text p {
+  margin: 0;
+  color: #435b6d;
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+/* Treatment Expertise: ETP & STP */
+.eespl-growth-expertise {
+  margin-top: 60px;
+}
+
+.eespl-growth-expertise__header {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.eespl-growth-expertise__eyebrow {
+  margin: 0 0 8px;
+  color: var(--eespl-green);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eespl-growth-expertise__heading {
+  margin: 0;
+  color: var(--eespl-navy);
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(1.8rem, 2.6vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.eespl-growth-expertise__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.eespl-expertise-card {
+  background: var(--eespl-white);
+  border: 1px solid rgba(62, 95, 114, 0.12);
+  border-radius: 18px;
+  padding: 34px 36px;
+  box-shadow: 0 8px 28px rgba(62, 95, 114, 0.05);
+  transition: transform 280ms ease, box-shadow 280ms ease, border-color 280ms ease;
+}
+
+.eespl-expertise-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(127, 176, 94, 0.4);
+  box-shadow: 0 16px 36px rgba(62, 95, 114, 0.09);
+}
+
+.eespl-expertise-card__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(62, 95, 114, 0.08);
+}
+
+.eespl-expertise-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(127, 176, 94, 0.12);
+  color: var(--eespl-green);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.eespl-expertise-card__title {
+  margin: 0;
+  color: var(--eespl-navy);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.28rem;
+  font-weight: 700;
+}
+
+.eespl-expertise-card__body p {
+  margin: 0 0 14px;
+  color: #435b6d;
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.eespl-expertise-card__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .eespl-about-growth {
+    padding-block: 76px;
+  }
+
+  .eespl-growth-top {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .eespl-growth-top__chart-col {
+    max-width: 580px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .eespl-growth-expertise__grid {
+    gap: 24px;
+  }
+
+  .eespl-expertise-card {
+    padding: 28px 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .eespl-about-growth {
+    padding-block: 60px;
+  }
+
+  .eespl-growth-top {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .eespl-growth-top__content {
+    order: 1;
+  }
+
+  .eespl-growth-top__chart-col {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .eespl-growth-chart-card {
+    padding: 20px 18px 16px;
+  }
+
+  .eespl-growth-team-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 22px;
+    margin-top: 40px;
+  }
+
+  .eespl-growth-expertise {
+    margin-top: 44px;
+  }
+
+  .eespl-growth-expertise__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .eespl-expertise-card {
+    padding: 24px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eespl-about-growth {
+    padding-block: 46px;
+  }
+
+  .eespl-growth-top__heading {
+    font-size: clamp(1.85rem, 7.5vw, 2.2rem);
+  }
+
+  .eespl-growth-expertise__heading {
+    font-size: clamp(1.5rem, 6.2vw, 1.85rem);
+  }
+
+  .eespl-growth-chart-card__header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .eespl-growth-top__body p,
+  .eespl-growth-team-card__text p,
+  .eespl-expertise-card__body p {
+    font-size: 0.94rem;
+    line-height: 1.68;
+  }
+}

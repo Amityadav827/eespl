@@ -372,6 +372,171 @@
         </div>
       </div>
     </section>
+
+    <!-- Step 5: Our Growth Section -->
+    <section class="eespl-about-growth" id="our-growth" aria-labelledby="our-growth-heading">
+      <div class="eespl-container">
+        <!-- Top Growth Block: Chart on Left, Growth Content on Right -->
+        <div class="eespl-growth-top">
+          <!-- Left Column: Historical Turnover Chart Card -->
+          <div class="eespl-growth-top__chart-col">
+            <figure class="eespl-growth-chart-card">
+              <div class="eespl-growth-chart-card__header">
+                <div class="eespl-growth-chart-card__title-group">
+                  <span class="eespl-growth-chart-card__badge">Historical Trend</span>
+                  <h3 class="eespl-growth-chart-card__title">Annual Turnover Growth</h3>
+                </div>
+                <div class="eespl-growth-chart-card__legend">
+                  <span class="eespl-growth-chart-card__dot"></span>
+                  <span>Turnover (₹ Crores)</span>
+                </div>
+              </div>
+
+              <div class="eespl-growth-chart-wrapper">
+                <svg class="eespl-growth-svg" viewBox="0 0 540 280" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Line chart showing historical turnover from 2011 to 2019 in Crores">
+                  <defs>
+                    <linearGradient id="eesplGrowthGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#7FB05E" stop-opacity="0.25" />
+                      <stop offset="100%" stop-color="#7FB05E" stop-opacity="0.0" />
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Horizontal Grid Lines & Y Axis Labels -->
+                  <g class="eespl-growth-grid">
+                    <line x1="50" y1="40" x2="510" y2="40" stroke="rgba(62, 95, 114, 0.12)" stroke-dasharray="3,3" />
+                    <text x="42" y="44" text-anchor="end" font-size="11" fill="#6a8292" font-family="Inter, sans-serif">20 Cr</text>
+
+                    <line x1="50" y1="90" x2="510" y2="90" stroke="rgba(62, 95, 114, 0.12)" stroke-dasharray="3,3" />
+                    <text x="42" y="94" text-anchor="end" font-size="11" fill="#6a8292" font-family="Inter, sans-serif">15 Cr</text>
+
+                    <line x1="50" y1="140" x2="510" y2="140" stroke="rgba(62, 95, 114, 0.12)" stroke-dasharray="3,3" />
+                    <text x="42" y="144" text-anchor="end" font-size="11" fill="#6a8292" font-family="Inter, sans-serif">10 Cr</text>
+
+                    <line x1="50" y1="190" x2="510" y2="190" stroke="rgba(62, 95, 114, 0.12)" stroke-dasharray="3,3" />
+                    <text x="42" y="194" text-anchor="end" font-size="11" fill="#6a8292" font-family="Inter, sans-serif">5 Cr</text>
+
+                    <line x1="50" y1="240" x2="510" y2="240" stroke="rgba(62, 95, 114, 0.2)" />
+                    <text x="42" y="244" text-anchor="end" font-size="11" fill="#6a8292" font-family="Inter, sans-serif">0 Cr</text>
+                  </g>
+
+                  <!-- Area Fill -->
+                  <path d="M 60 218 L 114 205 L 168 190 L 222 172 L 276 151 L 330 125 L 384 98 L 438 72 L 492 45 L 492 240 L 60 240 Z" fill="url(#eesplGrowthGrad)" />
+
+                  <!-- Growth Line -->
+                  <path class="eespl-growth-line" d="M 60 218 L 114 205 L 168 190 L 222 172 L 276 151 L 330 125 L 384 98 L 438 72 L 492 45" fill="none" stroke="#7FB05E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+                  <!-- Data Markers & Values -->
+                  <g class="eespl-growth-points">
+                    <circle cx="60" cy="218" r="4.5" fill="#7FB05E" stroke="#ffffff" stroke-width="2.5" />
+                    <circle cx="114" cy="205" r="4.5" fill="#7FB05E" stroke="#ffffff" stroke-width="2.5" />
+                    <circle cx="168" cy="190" r="4.5" fill="#7FB05E" stroke="#ffffff" stroke-width="2.5" />
+                    <circle cx="222" cy="172" r="4.5" fill="#7FB05E" stroke="#ffffff" stroke-width="2.5" />
+                    <circle cx="276" cy="151" r="4.5" fill="#7FB05E" stroke="#ffffff" stroke-width="2.5" />
+                    <circle cx="330" cy="125" r="4.5" fill="#7FB05E" stroke="#ffffff" stroke-width="2.5" />
+                    <circle cx="384" cy="98" r="4.5" fill="#7FB05E" stroke="#ffffff" stroke-width="2.5" />
+                    <circle cx="438" cy="72" r="4.5" fill="#7FB05E" stroke="#ffffff" stroke-width="2.5" />
+                    <circle cx="492" cy="45" r="4.5" fill="#7FB05E" stroke="#ffffff" stroke-width="2.5" />
+                  </g>
+
+                  <!-- Value Labels on Key Points -->
+                  <g class="eespl-growth-val-labels" font-size="10.5" font-weight="600" fill="#3E5F72" font-family="Inter, sans-serif" text-anchor="middle">
+                    <text x="60" y="208">₹2.2</text>
+                    <text x="168" y="180">₹5.0</text>
+                    <text x="276" y="141">₹8.9</text>
+                    <text x="384" y="88">₹14.2</text>
+                    <text x="492" y="35">₹19.5</text>
+                  </g>
+
+                  <!-- X Axis Year Labels -->
+                  <g class="eespl-growth-x-labels" font-size="11" fill="#6a8292" font-family="Inter, sans-serif" text-anchor="middle">
+                    <text x="60" y="260">2011</text>
+                    <text x="114" y="260">2012</text>
+                    <text x="168" y="260">2013</text>
+                    <text x="222" y="260">2014</text>
+                    <text x="276" y="260">2015</text>
+                    <text x="330" y="260">2016</text>
+                    <text x="384" y="260">2017</text>
+                    <text x="438" y="260">2018</text>
+                    <text x="492" y="260">2019</text>
+                  </g>
+                </svg>
+              </div>
+
+              <figcaption class="eespl-growth-chart-card__caption">Historical Turnover in Crores (2011–2019)</figcaption>
+            </figure>
+          </div>
+
+          <!-- Right Column: Growth & History Text -->
+          <div class="eespl-growth-top__content">
+            <p class="eespl-growth-top__eyebrow">OUR GROWTH</p>
+            <h2 class="eespl-growth-top__heading" id="our-growth-heading">
+              Steady Growth Through Innovation
+            </h2>
+
+            <div class="eespl-growth-top__body">
+              <p>Enhance Ecotech Solution Pvt. Ltd. has been in the business of complete environmental services and water treatment for almost a decade. As a pioneer of high-quality water and wastewater treatment with the latest emerging technologies, our solutions and services extend to Bhutan, Nepal, and almost all parts of India.</p>
+
+              <p>The positive growth achieved in recent years is a testament to the immense potential of the EESPL team in delivering effective, sustainable customer solutions and achieving utmost customer satisfaction across challenging municipal and industrial environments.</p>
+
+              <p>Established in 2001, EESPL started with a mission centered around the recycling and treatment of wastewater from domestic and industrial activities. Headquartered with our operational base and office in Faridabad, Haryana, India, we have grown continuously as an industry-recognized solution provider catering to complex environmental demands nationwide.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manufacturing & Engineering Team Intro -->
+        <div class="eespl-growth-team-card">
+          <div class="eespl-growth-team-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <div class="eespl-growth-team-card__text">
+            <h3 class="eespl-growth-team-card__title">Manufacturing Excellence &amp; Technical Leadership</h3>
+            <p>In our manufacturing unit, we design and manufacture advanced Water Treatment Plants backed by a team of skilled and dedicated Engineers, Managers, Consultants &amp; Technicians under the leadership of our Managing Director, Mr. Varun Singh. With comprehensive knowledge and deep engineering experience in STP manufacturing and the annual maintenance (AMC) of wastewater treatment plants, our team ensures every installation meets the highest benchmarks of performance, safety, and longevity.</p>
+          </div>
+        </div>
+
+        <!-- Treatment Expertise Lower Section: ETP & STP Cards -->
+        <div class="eespl-growth-expertise">
+          <div class="eespl-growth-expertise__header">
+            <p class="eespl-growth-expertise__eyebrow">TREATMENT EXPERTISE</p>
+            <h3 class="eespl-growth-expertise__heading">Engineering Capability Built Through Experience</h3>
+          </div>
+
+          <div class="eespl-growth-expertise__grid">
+            <!-- ETP Card -->
+            <article class="eespl-expertise-card">
+              <div class="eespl-expertise-card__header">
+                <span class="eespl-expertise-card__icon" aria-hidden="true">
+                  <i class="fa-solid fa-flask-vial"></i>
+                </span>
+                <h3 class="eespl-expertise-card__title">Effluent Treatment Plants (ETP)</h3>
+              </div>
+
+              <div class="eespl-expertise-card__body">
+                <p>EESPL undertakes the comprehensive Design, Manufacture, Supply, Erection, and Commissioning of Effluent Treatment Plants (ETP) on a turnkey basis for diverse types and natures of wastewaters and industrial effluents. Our systems incorporate advanced primary, secondary, and tertiary polishing processes engineered specifically for the effective removal of organic, inorganic, oil and grease, heavy metals, and suspended solids across hotels, residential apartments, and demanding industrial facilities.</p>
+
+                <p>Every treatment scheme is engineered following thorough examination of effluent samples, extensive treatability studies, and evaluation of diverse treatment methods to guarantee operational practicability and cost-efficiency. We engineer compact, custom-made designs, and portable systems with small footprints and energy-saving operations. Additionally, we specialize in the up-gradation and modification of existing ETP systems to ensure full compliance with the statutory discharge standards set by the Central Pollution Control Board (CPCB), New Delhi.</p>
+              </div>
+            </article>
+
+            <!-- STP Card -->
+            <article class="eespl-expertise-card">
+              <div class="eespl-expertise-card__header">
+                <span class="eespl-expertise-card__icon" aria-hidden="true">
+                  <i class="fa-solid fa-water"></i>
+                </span>
+                <h3 class="eespl-expertise-card__title">Sewage Treatment Plants (STP)</h3>
+              </div>
+
+              <div class="eespl-expertise-card__body">
+                <p>EESPL specializes in the turnkey design, fabrication, supply, erection, and commissioning of Sewage Treatment Plants (STP) engineered for the hotel industry, residential colonies, hospitals, IT parks, commercial buildings, and industrial units in metros and urban hubs. Each plant is meticulously engineered to comply strictly with environmental discharge standards mandated by State Pollution Control Boards (SPCBs) while ensuring reliable and economical day-to-day operation.</p>
+
+                <p>Addressing the critical challenges of high land costs and spatial constraints in metropolitan locations, our engineering team designs compact and modular STP installations built in accordance with consultant recommendations and site-specific needs. Utilizing the latest techno-commercially viable processes and systems (such as MBBR, SBR, MBR, and ASP), we deliver treated effluent of superior quality suitable for flushing, horticultural irrigation, cooling tower makeup, and industrial recycling.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="eespl-footer">
