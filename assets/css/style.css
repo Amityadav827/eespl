@@ -5348,3 +5348,306 @@ body.eespl-modal-open {
     height: 28px;
   }
 }
+
+/* ==========================================================================
+   CAREERS: STEP 2 — CAREER AT EESPL (INTRO & CULTURE SECTION)
+   ========================================================================== */
+.eespl-career-intro {
+  position: relative;
+  background-color: var(--eespl-white);
+  padding-block: 92px;
+}
+
+.eespl-career-intro__top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
+  gap: 52px;
+  align-items: center;
+}
+
+/* Left Content */
+.eespl-career-intro__content {
+  min-width: 0;
+}
+
+.eespl-career-intro__eyebrow {
+  display: inline-block;
+  color: var(--eespl-green, #7FB05E);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.eespl-career-intro__heading {
+  font-family: var(--eespl-font-serif, 'Lora', Georgia, serif);
+  color: var(--eespl-navy, #3E5F72);
+  font-size: clamp(2rem, 3.4vw, 2.65rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 22px;
+}
+
+.eespl-career-intro__body p {
+  color: #556B78;
+  font-size: 0.98rem;
+  line-height: 1.72;
+  margin: 0 0 16px;
+}
+
+.eespl-career-intro__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Right 3-Image Gallery */
+.eespl-career-gallery {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px;
+  height: 380px;
+  min-width: 0;
+}
+
+.eespl-career-gallery__item {
+  margin: 0;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(62, 95, 114, 0.12);
+  box-shadow: 0 10px 26px rgba(62, 95, 114, 0.08);
+  background-color: #EBF2F6;
+  transition: transform 260ms ease, box-shadow 260ms ease;
+}
+
+.eespl-career-gallery__item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 14px 32px rgba(62, 95, 114, 0.12);
+}
+
+.eespl-career-gallery__item--primary {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.eespl-career-gallery__item--secondary {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.eespl-career-gallery__item--tertiary {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.eespl-career-gallery__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.eespl-career-gallery__item--primary img {
+  object-position: center 30%;
+}
+
+/* Full-Width 4-Item Culture/Value Strip */
+.eespl-career-values {
+  margin-top: 56px;
+}
+
+.eespl-career-values__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 30px 24px;
+  list-style: none;
+  background-color: #F7FBFD;
+  border: 1px solid rgba(62, 95, 114, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(62, 95, 114, 0.04);
+}
+
+.eespl-career-value-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.eespl-career-value-card:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: rgba(62, 95, 114, 0.14);
+}
+
+.eespl-career-value-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(127, 176, 94, 0.15);
+  color: var(--eespl-green, #7FB05E);
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  transition: transform 240ms ease, background-color 240ms ease;
+}
+
+.eespl-career-value-card:hover .eespl-career-value-card__icon {
+  transform: translateY(-2px);
+  background: rgba(127, 176, 94, 0.22);
+}
+
+.eespl-career-value-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--eespl-navy, #3E5F72);
+  margin: 0 0 6px;
+  line-height: 1.3;
+}
+
+.eespl-career-value-card__desc {
+  font-size: 0.86rem;
+  color: #556B78;
+  line-height: 1.48;
+  margin: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .eespl-career-intro {
+    padding-block: 76px;
+  }
+
+  .eespl-career-intro__top {
+    gap: 36px;
+  }
+
+  .eespl-career-gallery {
+    height: 350px;
+  }
+
+  .eespl-career-values {
+    margin-top: 46px;
+  }
+
+  .eespl-career-values__list {
+    padding: 24px 16px;
+  }
+
+  .eespl-career-value-card {
+    padding: 0 12px;
+  }
+
+  .eespl-career-value-card__title {
+    font-size: 0.98rem;
+  }
+
+  .eespl-career-value-card__desc {
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .eespl-career-intro__top {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .eespl-career-gallery {
+    height: 340px;
+    max-width: 600px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .eespl-career-values__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 28px;
+    padding: 28px 20px;
+  }
+
+  .eespl-career-value-card:not(:last-child)::after {
+    display: none;
+  }
+
+  .eespl-career-value-card:nth-child(1),
+  .eespl-career-value-card:nth-child(3) {
+    border-right: 1px solid rgba(62, 95, 114, 0.14);
+  }
+}
+
+@media (max-width: 580px) {
+  .eespl-career-intro {
+    padding-block: 54px;
+  }
+
+  .eespl-career-intro__heading {
+    font-size: clamp(1.85rem, 7.5vw, 2.25rem);
+  }
+
+  .eespl-career-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+    gap: 10px;
+  }
+
+  .eespl-career-gallery__item--primary {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    aspect-ratio: 16 / 10;
+  }
+
+  .eespl-career-gallery__item--secondary {
+    grid-column: 1;
+    grid-row: 2;
+    aspect-ratio: 4 / 3;
+  }
+
+  .eespl-career-gallery__item--tertiary {
+    grid-column: 2;
+    grid-row: 2;
+    aspect-ratio: 4 / 3;
+  }
+
+  .eespl-career-values {
+    margin-top: 36px;
+  }
+
+  .eespl-career-values__list {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    padding: 24px 16px;
+  }
+
+  .eespl-career-value-card:nth-child(1),
+  .eespl-career-value-card:nth-child(3) {
+    border-right: none;
+  }
+
+  .eespl-career-value-card:not(:last-child) {
+    border-bottom: 1px solid rgba(62, 95, 114, 0.12);
+    padding-bottom: 20px;
+  }
+
+  .eespl-career-value-card__icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+}
