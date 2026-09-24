@@ -141,7 +141,8 @@ svg {
   padding-left: 11px;
 }
 
-.eespl-social-links a {
+.eespl-social-links a,
+.eespl-social-links span {
   display: grid;
   width: 26px;
   height: 26px;
@@ -149,6 +150,11 @@ svg {
   color: var(--eespl-white);
   font-size: 0.88rem;
   transition: color 160ms ease;
+}
+
+.eespl-social-link--pending {
+  opacity: 0.55;
+  cursor: default;
 }
 
 /* 5. Main header */

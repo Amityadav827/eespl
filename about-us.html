@@ -6,26 +6,99 @@
   <title>About Us | Enhance Ecotech Solution Pvt. Ltd. (EESPL)</title>
   <meta name="description" content="Learn about Enhance Ecotech Solution Pvt. Ltd. (EESPL), providing sustainable water and wastewater treatment solutions for industries, institutions and communities.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.example.com/about-us.html">
+  <link rel="canonical" href="https://eespl.in/about-us.html">
   <meta name="theme-color" content="#3E5F72">
   <link rel="icon" href="assets/images/favicon.ico" sizes="any">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="About Us | Enhance Ecotech Solution Pvt. Ltd. (EESPL)">
   <meta property="og:description" content="Learn about Enhance Ecotech Solution Pvt. Ltd. (EESPL), providing sustainable water and wastewater treatment solutions for industries, institutions and communities.">
-  <meta property="og:url" content="https://www.example.com/about-us.html">
+  <meta property="og:url" content="https://eespl.in/about-us.html">
   <meta property="og:site_name" content="EESPL">
+  <meta property="og:image" content="https://eespl.in/assets/images/about-hero-banner.png">
 
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About Us | Enhance Ecotech Solution Pvt. Ltd. (EESPL)">
   <meta name="twitter:description" content="Learn about Enhance Ecotech Solution Pvt. Ltd. (EESPL), providing sustainable water and wastewater treatment solutions for industries, institutions and communities.">
+  <meta name="twitter:image" content="https://eespl.in/assets/images/about-hero-banner.png">
 
+  <link rel="preload" as="image" href="assets/images/about-hero-banner.png" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&amp;family=Inter:wght@400;500;600;700&amp;family=Lora:wght@700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js" defer></script>
+
+  <!-- JSON-LD Structured Data: AboutPage & Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://eespl.in/about-us.html#webpage",
+        "url": "https://eespl.in/about-us.html",
+        "name": "About Us | Enhance Ecotech Solution Pvt. Ltd. (EESPL)",
+        "description": "Learn about Enhance Ecotech Solution Pvt. Ltd. (EESPL), providing sustainable water and wastewater treatment solutions for industries, institutions and communities.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://eespl.in/#website",
+          "url": "https://eespl.in/",
+          "name": "Enhance Ecotech Solution Pvt. Ltd."
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://eespl.in/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us",
+              "item": "https://eespl.in/about-us.html"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "Organization",
+          "@id": "https://eespl.in/#organization",
+          "name": "Enhance Ecotech Solution Pvt. Ltd.",
+          "alternateName": "EESPL",
+          "url": "https://eespl.in/",
+          "logo": "https://eespl.in/assets/images/logo.webp",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "B-184, 2nd Floor Gupta Ji Plaza, Green Field Colony",
+            "addressLocality": "Faridabad",
+            "addressRegion": "Haryana",
+            "postalCode": "121010",
+            "addressCountry": "IN"
+          },
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+91-129-4198999",
+              "contactType": "customer service",
+              "areaServed": "IN"
+            },
+            {
+              "@type": "ContactPoint",
+              "telephone": "+91-7303393691",
+              "contactType": "sales",
+              "areaServed": "IN"
+            }
+          ],
+          "email": "info@eespl.in"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="eespl-skip-link" href="#main-content">Skip to main content</a>
@@ -52,9 +125,9 @@
             <a href="https://www.linkedin.com/company/enhance-ecotech-solution-private-limited?originalSubdomain=in" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
             </a>
-            <a class="eespl-social-link--pending" href="#" aria-label="Instagram">
+            <span class="eespl-social-link--pending" role="img" aria-label="Instagram (coming soon)">
               <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-            </a>
+            </span>
           </div>
         </div>
       </div>
@@ -228,7 +301,7 @@
           <!-- Right: Director Visual & Quote Card -->
           <div class="eespl-about-director__visual">
             <div class="eespl-director-photo-card">
-              <img class="eespl-director-photo" src="assets/images/Varun%20Singh.png" width="426" height="427" alt="Varun Singh, Managing Director of Enhance Ecotech Solution Pvt. Ltd." loading="lazy">
+              <img class="eespl-director-photo" src="assets/images/Varun%20Singh.png" width="426" height="427" alt="Varun Singh, Managing Director of Enhance Ecotech Solution Pvt. Ltd." loading="lazy" decoding="async">
             </div>
 
             <div class="eespl-director-quote-card">
@@ -283,7 +356,7 @@
           <!-- Right Column: Premium Plant Visual -->
           <div class="eespl-about-company__visual">
             <div class="eespl-company-card">
-              <img class="eespl-company-image" src="assets/images/Sewage%20Treatment%20Plant%20(STP).png" width="1448" height="1086" alt="EESPL turnkey Sewage Treatment Plant (STP) installation and industrial facility" loading="lazy">
+              <img class="eespl-company-image" src="assets/images/Sewage%20Treatment%20Plant%20(STP).png" width="1448" height="1086" alt="EESPL turnkey Sewage Treatment Plant (STP) installation and industrial facility" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
@@ -293,19 +366,19 @@
           <p class="eespl-cert-strip__label">CERTIFICATIONS &amp; RECOGNITIONS</p>
           <div class="eespl-cert-strip__grid">
             <div class="eespl-cert-strip__item">
-              <img src="assets/images/stp-manufacturer-msme.webp" width="300" height="241" alt="MSME - Ministry of Micro, Small and Medium Enterprises Recognition" loading="lazy">
+              <img src="assets/images/stp-manufacturer-msme.webp" width="300" height="241" alt="MSME - Ministry of Micro, Small and Medium Enterprises Recognition" loading="lazy" decoding="async">
             </div>
             <div class="eespl-cert-strip__item">
-              <img src="assets/images/usab-manufacturer-delhi.webp" width="145" height="154" alt="GeM - Government e Marketplace Registered Supplier" loading="lazy">
+              <img src="assets/images/usab-manufacturer-delhi.webp" width="145" height="154" alt="GeM - Government e Marketplace Registered Supplier" loading="lazy" decoding="async">
             </div>
             <div class="eespl-cert-strip__item">
-              <img src="assets/images/wtp-suppliers-cpwd.webp" width="400" height="321" alt="CPWD - Central Public Works Department Enlisted" loading="lazy">
+              <img src="assets/images/wtp-suppliers-cpwd.webp" width="400" height="321" alt="CPWD - Central Public Works Department Enlisted" loading="lazy" decoding="async">
             </div>
             <div class="eespl-cert-strip__item">
-              <img src="assets/images/stp-operation-services.webp" width="145" height="154" alt="IAF - International Accreditation Forum Certified" loading="lazy">
+              <img src="assets/images/stp-operation-services.webp" width="145" height="154" alt="IAF - International Accreditation Forum Certified" loading="lazy" decoding="async">
             </div>
             <div class="eespl-cert-strip__item">
-              <img src="assets/images/etp-operation-services.webp" width="300" height="241" alt="CE Quality Standard Certification" loading="lazy">
+              <img src="assets/images/etp-operation-services.webp" width="300" height="241" alt="CE Quality Standard Certification" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
@@ -647,7 +720,7 @@
       <div class="eespl-footer__main">
         <div class="eespl-footer__brand">
           <a class="eespl-footer__logo" href="index.html" aria-label="EESPL home">
-            <img src="assets/images/logo.webp" width="171" height="93" alt="Enhance Ecotech Solution Pvt. Ltd. (EESPL)">
+            <img src="assets/images/logo.webp" width="171" height="93" alt="Enhance Ecotech Solution Pvt. Ltd. (EESPL)" loading="lazy" decoding="async">
           </a>
           <p class="eespl-footer__description">Engineering sustainable water solutions for a cleaner, healthier and greener tomorrow.</p>
 
